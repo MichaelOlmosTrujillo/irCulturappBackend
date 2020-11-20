@@ -4,7 +4,7 @@
   "description": "Aplicación de eventos culturales para la localidad de Suba",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
     "Cultura-App-Localidad",

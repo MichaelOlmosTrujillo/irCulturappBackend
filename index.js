@@ -16,6 +16,10 @@ const eventosPorCentroCultural = require("./routes/eventosPorCentroCultural");
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.get("/", (req, res)=>{
+    res.status(200).send("El servidor está corriendo");
+});
 app.use("/api/usuario/", usuario);
 app.use("/api/auth/", auth);
 app.use("/api/authCentroCultural/", authCentroCultural);
