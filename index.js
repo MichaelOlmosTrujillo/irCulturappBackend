@@ -1,3 +1,4 @@
+require('dotenv').config() //Config mongo
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");//Sirve para conectar el Frontend con el Backend 
@@ -37,7 +38,7 @@ app.listen(port, () => {
 
 // Registro en BD en mongo
 
-mongoose.connect("mongodb://localhost/irCulturapp", {
+mongoose.connect(process.env.MONGOURL, {
         useNewUrlParser: true,
         useFindAndModify: false,
         useCreateIndex: true,
